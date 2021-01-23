@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    color: #fff;
+}
+
+canvas {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#starfield {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+    width: auto;
+
+}
+div.seikou{
+	   font-size: xx-large;
+	    text-align: center;
+	     left: 50%;
+}
+.wrapper ao{
+	background: #191970;
+	 vertical-align:top;
+}
+
+.all  {
+background: mediumseagreen;
+color: white;
+transition: all 0.2s;
+}
+
+.all:hover {
+transform: scale(1.3, 1.3);
+padding: 16px;
+}
+
+
+.wrapper ao:hover{
+	background: #191970;
+	   font-size: xx-large;
+}
+
+.logo img{
+    position: absolute;
+    top: -320px;
+    left: -60px;
+    width: 480px;
+    height: 285px;
+    z-index: -10;
+}
+input[type=checkbox] {
+	display: none; /* checkboxを非表示にする */
+}
+
+p{
+	color:#FFFFFF;
+}

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+  /*background:black;*/
+  padding:0;
+  margin:0;
+}
+
+canvas {
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+}
+
+
+#body {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+
+.logo img{
+    position: absolute;
+    top: -350px;
+    left: -120px;
+    width: 480px;
+    height: 285px;
+    z-index: -10;
+}
+
+#sign-up {
+  color:white;
+  text-shadow: 1px 1px 2px,teal 0 0 20px
+}
+
+
+input{
+	color:#000;
+}
+
+ a{
+    text-shadow:none;
+    background-color: rgba(255,255,255,0.5);
+}
+.astronaut {
+    position: absolute;
+    top: -100px;
+    left: -120px;
+    width: 500px;
+    height: 500px;
+    z-index: -20;
+}

@@ -1,0 +1,623 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.logofailure img{
+    position: absolute;
+    top: 0px;
+    left: -240px;
+    width: 480px;
+    height: 285px;
+}
+
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.section__wrapper {
+	/*  position : relative ; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*  width : 100% ;
+  height : 900px ; */
+	margin: 0 auto;
+	background: #190B2A;
+}
+
+.eva__wrapper {
+	position: absolute;
+	top: 300px;
+	width:
+	margin: 0 auto;
+	width: 500px;
+}
+
+
+#eva:checked ~ .eva__wrapper {
+	animation: motion .4s .3s linear;
+}
+
+@
+keyframes motion { 0%{
+	transform: translate(0, 0);
+}
+
+10%{
+transform
+
+:
+
+translate
+(0
+,
+-4
+px
+);
+}
+15%{
+transform
+
+:
+
+translate
+(0
+,
+4
+px
+);
+}
+20%{
+transform
+
+:
+
+translate
+(0
+,
+-4
+px
+);
+}
+25%{
+transform
+
+:
+
+translate
+(0
+,
+4
+px
+);
+}
+30%{
+transform
+
+:
+
+translate
+(0
+,
+-4
+px
+);
+}
+35%{
+transform
+
+:
+
+translate
+(0
+,
+4
+px
+);
+}
+40%{
+transform
+
+:
+
+translate
+(0
+,
+-4
+px
+);
+}
+45%{
+transform
+
+:
+
+translate
+(0
+,
+2
+px
+);
+}
+50%{
+transform
+
+:
+
+translate
+(0
+,
+-2
+px
+);
+}
+100%{
+transform
+
+:
+
+translate
+(0
+,
+0);
+}
+}
+.eva {
+	display: block;
+	cursor: pointer;
+}
+
+.eva__top {
+	position: relative;
+	width: 500px;
+	height: 136px;
+	padding: 16px 0;
+	box-sizing: border-box;
+	border-radius: 40px 40px 0 0;
+	background: linear-gradient(0deg, #070E33, #4F30B1 70%);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .6) inset;
+	perspective: 200px;
+}
+
+.eva__top::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100px;
+	height: 20px;
+	background: #E79B00;
+	transform-origin: center bottom;
+	transform: rotateX(80deg);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .6) inset;
+}
+
+.eva__box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 80px * 2);
+	margin: 0 auto;
+	color: #FFF;
+}
+
+.eva__number {
+	position: relative;
+	width: 80px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: paralucent-stencil, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	font-size: 85px;
+	line-height: 80%;
+}
+
+.eva__number::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	margin: 0;
+	width: 100%;
+	height: 28px;
+	background: linear-gradient(0deg, #2A1F6F, #3C278F 80%);
+}
+
+.eva__number::after {
+	content: "ERROR";
+	position: absolute;
+	text-align: center;
+	letter-spacing: 2.5px;
+	left: 0;
+	right: 0;
+	bottom: 22px;
+	width: 60px;
+	line-height: 24px;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.eva__question {
+	width: calc(100% - 80px - 24px);
+	margin: 0;
+	font-size: 24px;
+	text-align: justify;
+}
+
+.eva__patition {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 40px;
+}
+
+.eva__patition:nth-child(1) {
+	left: 48px;
+}
+
+.eva__patition:nth-child(2) {
+	right: 48px;
+}
+
+.eva__line--top1 {
+	position: absolute;
+	top: 0;
+	width: 6px;
+	height: 86px;
+	background: #07003C;
+}
+
+.eva__line--left .eva__line--top1 {
+	left: 0;
+}
+
+.eva__line--right .eva__line--top1 {
+	right: 0;
+}
+
+.eva__line--top1::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #190B2A;
+}
+
+.eva__line--top1::after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	width: 100%;
+	height: 20px;
+	background: #070010;
+}
+
+.eva__line--left .eva__line--top1:after {
+	left: 0;
+	transform-origin: top left;
+	transform: skew(60deg);
+}
+
+.eva__line--right .eva__line--top1:after {
+	right: 0;
+	transform-origin: top right;
+	transform: skew(-60deg);
+}
+
+.eva__line--top2 {
+	position: absolute;
+	bottom: 0;
+	width: 6px;
+	height: 30px;
+	background: #070010;
+}
+
+.eva__line--left .eva__line--top2 {
+	right: 0;
+}
+
+.eva__line--right .eva__line--top2 {
+	left: 0;
+}
+
+.eva__modifire {
+	overflow: hidden;
+	position: absolute;
+	top: 16px;
+	right: 0;
+	width: 47px;
+	height: 90px;
+	transform-origin: left top;
+}
+
+.eva__modifire::before, .eva__modifire::after {
+	content: "";
+	position: absolute;
+	left: -25%;
+	width: 150%;
+	background: #2EFF32;
+	background: linear-gradient(90deg, #2EFF32, #129A65);
+	transform: rotate(30deg);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1) inset;
+}
+
+.eva__modifire::before {
+	top: 20px;
+	height: 24px;
+}
+
+.eva__modifire::after {
+	top: 52px;
+	height: 12px;
+}
+
+.eva__muzzleBord {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	width: 30px;
+	padding: 8px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	background: linear-gradient(0deg, #070E33, #4F30B1 70%);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .7) inset;
+}
+
+.eva__muzzle:nth-child(1) {
+	margin-bottom: 8px;
+}
+
+.eva__muzzle {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: linear-gradient(-45deg, #6A000B, #E60033);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .7);
+}
+
+.eva__muzzle::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #000;
+	box-shadow: 2px 2px 0 #6A000B inset;
+}
+
+.eva__bottom {
+	position: relative;
+	width: 500px;
+	height: 40px;
+	margin: 0;
+	border-radius: 0 0 40px 40px;
+	background: linear-gradient(0deg, #4F30B1 30%, #070E33);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .6) inset;
+}
+
+.eva__line--under {
+	position: absolute;
+	top: 0;
+	width: 6px;
+	height: 100%;
+	background: #070010;
+}
+
+.eva__line--under:nth-child(1) {
+	left: 82px;
+}
+
+.eva__line--under:nth-child(2) {
+	right: 82px;
+}
+
+.eva__line--under::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #190B2A;
+}
+
+.eva__undermodi {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 200px;
+	height: 30px;
+	margin: 0 auto;
+	perspective: 100px;
+}
+
+.eva__undermodi::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 150%;
+	box-sizing: border-box;
+	transform-origin: bottom center;
+	border-top: solid 14px #07003C;
+	border-left: solid 10px #07003C;
+	border-right: solid 10px #07003C;
+	transform: rotateX(60deg);
+}
+
+.eva__undermodi::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 70%;
+	height: 7px;
+	transform: rotateX(60deg);
+	transform-origin: bottom center;
+	background: #190B2A;
+	box-shadow: 0 -7px 10px rgba(0, 0, 0, .3);
+}
+
+.eva__light {
+	position: absolute;
+	bottom: 8px;
+	width: 50px;
+	height: 10px;
+	overflow: hidden;
+	background: #666;
+	box-shadow: 0 0 10px #333 inset;
+	transition: .4s;
+}
+
+.eva__light--left {
+	left: 105px;
+	transform: skew(-50deg);
+}
+
+.eva__light--right {
+	right: 105px;
+	transform: skew(50deg);
+}
+
+.eva__textarea {
+	position: relative;
+	width: calc(100% - 8px * 2);
+	max-width: calc(500px - 16px);
+	max-height: 0;
+	overflow: hidden;
+	padding: 0 16px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background: #000;
+	transition: .4s;
+	perspective: 100px;
+}
+
+.eva__textarea::before, .eva__textarea::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	height: 100px;
+	margin: auto 0;
+	transform-origin: left center;
+	background: #E79B00;
+}
+
+.eva__textarea::before {
+	left: -20px;
+	transform: rotateY(80deg);
+}
+
+.eva__textarea::after {
+	right: -20px;
+	transform: rotateY(60deg);
+}
+
+.eva__text {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 16px;
+	border: solid 1px red;
+	color: #fff;
+}
+
+.eva__text::before {
+	content: "緊急事態";
+	position: absolute;
+	top: -10px;
+	left: 16px;
+	width: 100px;
+	height: 20px;
+	font-family: paralucent-stencil, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+	color: red;
+	background: #000;
+}
+
+.eva__textmodi {
+	position: absolute;
+	bottom: 28px;
+	right: 24px;
+	width: 10px;
+	height: 12px;
+	color: #fff;
+	background: red;
+	transform: skew(30deg);
+}
+
+.eva__textmodi::before, .eva__textmodi::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: red;
+	transition: .4s;
+}
+
+#eva:checked ~ .eva__wrapper .eva__textarea {
+	max-height: 200px;
+	padding: 24px 16px;
+}
+
+#eva:checked ~ .eva__wrapper .eva__textmodi::after {
+	left: -16px;
+}
+
+#eva:checked ~ .eva__wrapper .eva__textmodi::before {
+	left: -32px;
+}
+
+#eva:checked ~ .eva__wrapper .eva__light {
+	background: #E60033;
+	box-shadow: 0 0 20px #E60033;
+}
+
+#se {
+	display: none;
+}
